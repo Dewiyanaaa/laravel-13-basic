@@ -21,7 +21,7 @@
                 <div class="navbar-nav ms-auto">
 
                     <a class="nav-link" href="{{ route('student.index') }}">Student</a>
-                    <a class="nav-link" href="{{ route('deparment.index') }}">Deparment</a>
+                    <a class="nav-link" href="{{ route('department.index') }}">Department</a>
                     <a class="nav-link" href="{{ route('lecturer.index') }}">Lecturer</a>
 
 
