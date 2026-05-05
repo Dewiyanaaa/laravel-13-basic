@@ -6,15 +6,14 @@
         </div>
     @endsession
 
-    <a class="btn btn-primary mb-3" href="{{ route('department.create') }}" role="button">Create</a>
+    <a class="btn btn-primary mb-3" href="{{ route('deparment.create') }}" role="button">Create</a>
 
     <ul class="list-group">
         @foreach ($department as $department)
             <li class="list-group-item">
                 {{ $department->name }}
-                <a class="btn btn-warning btn-sm" href="{{ route('department.edit', $department) }}"
-                    role="button">Edit</a>
-                <form action="{{ route('department.destroy', $department) }}" method="POST" class="d-inline">
+                <a class="btn btn-warning btn-sm" href="{{ route('deparment.edit', $department) }}" role="button">Edit</a>
+                <form action="{{ route('deparment.destroy', $department) }}" method="POST" class="d-inline">
                     @method('DELETE')
                     @csrf
 

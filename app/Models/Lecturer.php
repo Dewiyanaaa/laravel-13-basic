@@ -11,8 +11,14 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Lecturer extends Model
 {
+
+// Daftarkan kolom yang ada di tabel database
+    protected $fillable = ['name', 'department_id'];
     /** @use HasFactory<\Database\Factories\LecturerFactory> */
     use HasFactory;
+
+
+    protected $with = ['department'];
     public function department(): BelongsTo
     {
         return $this->belongsTo(Department::class);

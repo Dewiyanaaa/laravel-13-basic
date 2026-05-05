@@ -9,7 +9,7 @@
     <a class="btn btn-primary mb-3" href="{{ route('lecturer.create') }}" role="button">Create</a>
 
     <ul class="list-group">
-        @foreach ($lecturer as $lecturer)
+        @foreach ($lecturers as $lecturer)
             <li class="list-group-item">
                 {{ $loop->iteration }}. {{ $lecturer->name }} -- {{ $lecturer->department->name }}
                 <a class="btn btn-warning btn-sm" href="{{ route('lecturer.edit', $lecturer) }}" role="button">Edit</a>
