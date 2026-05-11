@@ -24,7 +24,9 @@ class DepartmentController extends Controller
      */
     public function create()
     {
-        //
+        return view('organization.create', [
+    'title' => 'Create organization',
+]);
     }
 
     /**
